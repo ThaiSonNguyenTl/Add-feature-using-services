@@ -1,0 +1,27 @@
+<div class="card">
+  <h5 class="card-header bg-warning">Lists movies</h5>
+  <div class="card-body">
+
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Link</th>
+        <th>Author</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor = "let movie of movies; let i = index">
+        <td> {{i+1}} </td>
+        <td> {{movie.name}} </td>
+        <td> <a [href]="movie.link">{{movie.name}} </a> </td>
+        <td> {{movie.author}} </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  </div>
+</div>

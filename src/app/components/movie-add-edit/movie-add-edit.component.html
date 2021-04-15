@@ -1,0 +1,23 @@
+<div class="card">
+  <h5 class="card-header bg-primary">Add-Edit Movies</h5>
+  <div class="card-body">
+
+   <form>
+     <div class="form-group">
+       <label>Name Movie</label>
+       <input type="text" class="form-control" placeholder="Input movie" #name>
+     </div>
+     <div class="form-group">
+      <label>Link</label>
+      <input type="text" class="form-control" #link>
+    </div>
+    <div class="form-group">
+      <label for="">Author</label>
+      <input type="text" class="form-control" id="" placeholder="Author" #author>
+    </div>
+
+     <button type="button" class="btn btn-primary" (click) = "addMovie(name.value,link.value,author.value)">Save</button>
+   </form>
+  </div>
+</div>
+
